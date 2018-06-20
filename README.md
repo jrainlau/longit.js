@@ -17,7 +17,7 @@ const numStr = Longit('123456789123456789').format('0.00%')
 
 `Longit.js` provides 2 methods: `format()` and `digitMove()`, it would be easy to understood from the test unit:
 
-```
+```javascript
 test('Test for digitMove()', () => {
   expect(digitMove('1234.56', -5)).toBe('0.0123456')
   expect(digitMove('1234.56', -4)).toBe('0.123456')
