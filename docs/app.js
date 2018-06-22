@@ -140,7 +140,7 @@
     return new Long(str);
   }
 
-  var num = longNum('12345.67').digitMove(4);
+  var num = longNum('123456.7').digitMove(4);
 
   console.log(num);
 

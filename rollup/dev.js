@@ -18,7 +18,11 @@ export default {
     babel({
       exclude: 'node_modules/**'
     }),
-    serve(resolve(__dirname, '../docs')),
+    serve({
+      contentBase: resolve(__dirname, '../docs'),
+      host: 'localhost',
+      port: 3000
+    }),
     livereload()
   ]
 }
